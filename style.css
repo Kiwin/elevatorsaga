@@ -1,6 +1,5 @@
-
-
-html, body {
+html,
+body {
     background-color: #BFBD9F;
     color: white;
     margin: 0;
@@ -9,13 +8,24 @@ html, body {
 
 body {
     font-family: Oswald, Arial, Helvetica, sans-serif;
+    margin: 5px;
 }
-h1, h2, h3, h4, h5 {
+
+h1,
+h2,
+h3,
+h4,
+h5 {
     margin-top: 0.4em;
     margin-bottom: 0.3em;
 }
 
-h1, h2, h3, h4, h5, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
     color: #555;
 }
 
@@ -33,17 +43,22 @@ a {
     font-weight: bold;
     text-decoration: none;
 }
+
 a:hover {
     text-decoration: underline;
 }
 
-h2, h3, h4, h5 {
+h2,
+h3,
+h4,
+h5 {
     font-weight: normal;
 }
 
 dl {
     color: #555;
 }
+
 dl dd {
     font: 15px Arial, Helvetica, sans-serif;
     margin-bottom: 1em;
@@ -51,10 +66,8 @@ dl dd {
     width: 40%;
 }
 
-
 .container {
-    width: 1220px;
-    margin: 0 auto;
+    width: 100%;
     padding: 20px 0 40px 0;
     background-color: #BFBD9F;
 }
@@ -89,14 +102,20 @@ button.right {
 }
 
 .blink {
-  animation: blink 0.5s steps(3, start) infinite;
-  -webkit-animation: blink 0.5s steps(3, start) infinite;
+    animation: blink 0.5s steps(3, start) infinite;
+    -webkit-animation: blink 0.5s steps(3, start) infinite;
 }
+
 @keyframes blink {
-  to { visibility: hidden; }
+    to {
+        visibility: hidden;
+    }
 }
+
 @-webkit-keyframes blink {
-  to { visibility: hidden; }
+    to {
+        visibility: hidden;
+    }
 }
 
 .invisible {
@@ -107,7 +126,8 @@ button.right {
     opacity: 0.4;
 }
 
-#save_message, #fitness_message {
+#save_message,
+#fitness_message {
     color: #555;
     font-size: 12px;
     line-height: 30px;
@@ -142,7 +162,8 @@ button.right {
 }
 
 
-.timescale_decrease, .timescale_increase {
+.timescale_decrease,
+.timescale_increase {
     padding: 4px;
     line-height: 20px;
     cursor: pointer;
@@ -159,14 +180,14 @@ button.right {
 
 .CodeMirror {
     font: 14px Consolas, Monaco, monospace;
-    width: 1220px;
+    width: 100%;
     margin: 10px auto;
-    height: 320px;
+    height: auto;
 }
 
 .world {
     position: relative;
-    width: 1220px;
+    width: 100%;
     background-color: #333;
     padding: 0;
     overflow: hidden;
@@ -175,7 +196,7 @@ button.right {
 .innerworld {
     position: relative;
     height: 100%;
-    width: 938px;
+    width: auto;
     border-right: 1px solid black;
     border-left: 1px solid black;
     font-family: Arial, Helvetica, sans-serif;
@@ -198,7 +219,8 @@ button.right {
     border-bottom: 1px solid #444;
 }
 
-.statscontainer div, .statscontainer span {
+.statscontainer div,
+.statscontainer span {
     position: absolute;
     display: block;
     width: 240px;
@@ -221,7 +243,7 @@ button.right {
     padding-top: 20px;
     line-height: 20px;
     text-align: center;
-    background-color: rgba(44,44,44, 0.6);
+    background-color: rgba(44, 44, 44, 0.6);
     z-index: 5;
     overflow: hidden;
 }
@@ -239,8 +261,7 @@ button.right {
     z-index: 2;
 }
 
-.user.happy {
-}
+.user.happy {}
 
 .user.frustrated {
     color: yellow;
@@ -275,11 +296,11 @@ button.right {
     right: 2px;
 }
 
-.elevator .directionindicator .fa{
+.elevator .directionindicator .fa {
     color: rgba(255, 255, 255, 0.2);
 }
 
-.elevator .directionindicator .fa.activated{
+.elevator .directionindicator .fa.activated {
     color: #33ff44;
 }
 
@@ -303,11 +324,13 @@ button.right {
     line-height: 8px;
     color: rgba(255, 255, 255, 0.3);
 }
+
 .elevator .buttonpress {
     cursor: pointer;
     margin: 0;
     display: inline-block;
 }
+
 .elevator .buttonpress.activated {
     color: #33ff44;
 }
@@ -317,7 +340,8 @@ button.right {
     width: 100%;
     height: 49px;
     background-color: rgba(255, 255, 255, 0.1);
-    background: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.2), rgba(255,255,255,0.24), rgba(255,255,255,0.1)); /* Standard syntax */
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.24), rgba(255, 255, 255, 0.1));
+    /* Standard syntax */
     border-bottom: 1px solid #333;
 }
 
@@ -327,6 +351,7 @@ button.right {
     padding-left: 50px;
     color: rgba(255, 255, 255, 0.2);
 }
+
 .floor .buttonindicator .activated {
     color: rgba(55, 255, 55, 1.0);
 }
@@ -343,6 +368,7 @@ button.right {
 .footer {
     margin-top: 20px;
 }
+
 .footer h4 {
     font-size: 13px;
 }
@@ -363,7 +389,8 @@ button.right {
     border: none;
 }
 
-.doctable th, .doctable td  {
+.doctable th,
+.doctable td {
     text-align: left;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
