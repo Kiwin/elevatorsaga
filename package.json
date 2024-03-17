@@ -11,5 +11,9 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@types/codemirror": "^5.60.15",
+    "@types/jquery": "^3.5.29"
+  }
 }
